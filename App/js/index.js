@@ -42,7 +42,7 @@ Class('App', 'xui.Com',{
             .setLeft(20)
             .setTop(10)
             .setWidth(150)
-            .setValue("via ugo la malfa, pomezia")
+            .setValue("Via Roma, pomezia")
             );
             
             host.ctl_pane6.append((new xui.UI.SButton())
@@ -74,8 +74,8 @@ Class('App', 'xui.Com',{
             .setDockMargin({"left":40, "top":0, "right":0, "bottom":0})
             .setLeft(360)
             .setTop(60)
-            .setWidth(62)
-            .setCaption("by Lupant")
+            .setWidth(147)
+            .setCaption("Lupant")
             .setCustomStyle({"KEY":{"font-style":"italic", "$gradients":""}})
             );
             
