@@ -30,7 +30,7 @@ Class('App', 'xui.Com',{
             .setDock("center")
             .setLeft(250)
             .setTop(70)
-            .setWidth(343)
+            .setWidth(322)
             .setHeight(40)
             .setZIndex(0)
             );
@@ -39,15 +39,14 @@ Class('App', 'xui.Com',{
             .setHost(host,"address")
             .setDomId("address")
             .setDirtyMark(false)
-            .setLeft(20)
+            .setLeft(30)
             .setTop(10)
-            .setWidth(150)
             .setValue("Via Roma, pomezia")
             );
             
             host.ctl_pane6.append((new xui.UI.SButton())
             .setHost(host,"ctl_sbutton1")
-            .setLeft(190)
+            .setLeft(170)
             .setTop(10)
             .setWidth(90)
             .setCaption("Show on Map")
@@ -57,7 +56,7 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.Image())
             .setHost(host,"ctl_image3")
-            .setLeft(300)
+            .setLeft(270)
             .setTop(0)
             .setWidth(30)
             .setHeight(30)
