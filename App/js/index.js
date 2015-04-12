@@ -47,12 +47,21 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.SButton())
             .setHost(host,"ctl_sbutton1")
-            .setLeft(230)
+            .setLeft(260)
             .setTop(20)
             .setWidth(140)
             .setCaption("Visualizza su mappa")
             .onClick("_ctl_sbutton1_onclick")
             .setCustomStyle({"KEY":{"$gradients":"", "transform":"rotate(-3deg)"}})
+            );
+            
+            host.ctl_pane6.append((new xui.UI.SButton())
+            .setHost(host,"ctl_sbutton3")
+            .setLeft(460)
+            .setTop(20)
+            .setWidth(80)
+            .setCaption("Refresh")
+            .onClick("_ctl_sbutton3_onclick")
             );
             
             return children;
@@ -87,6 +96,9 @@ Class('App', 'xui.Com',{
                 }
             });
             
+        },
+        _ctl_sbutton3_onclick:function (profile,e,src,value){
+           location.reload();
         }
     }
 });
