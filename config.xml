@@ -19,5 +19,6 @@
 
     <gap:plugin name="fi.avaus.cordova.geolocation" version="0.3.11" />
 
+    <icon src="icon.png" />
 
 </widget>
