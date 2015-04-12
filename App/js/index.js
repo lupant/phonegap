@@ -47,12 +47,12 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.SButton())
             .setHost(host,"ctl_sbutton1")
-            .setLeft(180)
+            .setLeft(190)
             .setTop(10)
             .setWidth(90)
             .setCaption("Show on Map")
             .onClick("_ctl_sbutton1_onclick")
-            .setCustomStyle({"KEY":{"$gradients":"", "transform":"eg)"}})
+            .setCustomStyle({"KEY":{"$gradients":"", "transform":"rotate(356deg) scale(1,1) skew(0deg,0deg) translate(0px,0px)"}})
             );
             
             append((new xui.UI.Label())
@@ -75,8 +75,8 @@ Class('App', 'xui.Com',{
             .setLeft(360)
             .setTop(60)
             .setWidth(147)
-            .setCaption("Lupant")
-            .setCustomStyle({"KEY":{"font-style":"italic", "$gradients":""}})
+            .setCaption("by Lupant")
+            .setCustomStyle({"KEY":{"font-size":"8pt", "font-style":"italic", "$gradients":""}})
             );
             
             return children;
