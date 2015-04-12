@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.lupant.map"
+        versionCode = "10" 
+        version     = "0.1.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>PhoneGap Map</name>
+
+    <description>
+        A map app for phonegap. 
+    </description>
+
+    <author href="https://build.phonegap.com" email="lupant@gmail.com">
+        Luigi Pantuosco 
+    </author>
+
+    <gap:plugin name="fi.avaus.cordova.geolocation" version="0.3.11" />
+
+
+</widget>

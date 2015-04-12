@@ -30,7 +30,7 @@ Class('App', 'xui.Com',{
             .setDock("center")
             .setLeft(250)
             .setTop(70)
-            .setWidth(292)
+            .setWidth(343)
             .setHeight(40)
             .setZIndex(0)
             );
@@ -53,6 +53,17 @@ Class('App', 'xui.Com',{
             .setCaption("Show on Map")
             .onClick("_ctl_sbutton1_onclick")
             .setCustomStyle({"KEY":{"$gradients":"", "transform":"rotate(356deg) scale(1,1) skew(0deg,0deg) translate(0px,0px)"}})
+            );
+            
+            host.ctl_pane6.append((new xui.UI.Image())
+            .setHost(host,"ctl_image3")
+            .setLeft(300)
+            .setTop(0)
+            .setWidth(30)
+            .setHeight(30)
+            .setSrc("{/}img/marker.png")
+            .setCursor("pointer")
+            .onClick("_ctl_image3_onclick")
             );
             
             append((new xui.UI.Label())
@@ -114,6 +125,13 @@ Class('App', 'xui.Com',{
         },
         _ctl_sbutton3_onclick:function (profile,e,src,value){
            location.reload();
+        },
+        _ctl_image3_onclick:function (profile,e,src){
+            
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+            
+            
+            
         }
     }
 });
