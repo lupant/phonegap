@@ -28,9 +28,9 @@ Class('App', 'xui.Com',{
             append((new xui.UI.Pane())
             .setHost(host,"ctl_pane6")
             .setDock("center")
-            .setLeft(210)
+            .setLeft(250)
             .setTop(70)
-            .setWidth(368)
+            .setWidth(292)
             .setHeight(40)
             .setZIndex(0)
             );
@@ -41,15 +41,15 @@ Class('App', 'xui.Com',{
             .setDirtyMark(false)
             .setLeft(20)
             .setTop(10)
-            .setWidth(200)
+            .setWidth(150)
             .setValue("via ugo la malfa, pomezia")
             );
             
             host.ctl_pane6.append((new xui.UI.SButton())
             .setHost(host,"ctl_sbutton1")
-            .setLeft(250)
+            .setLeft(180)
             .setTop(10)
-            .setWidth(100)
+            .setWidth(90)
             .setCaption("Show on Map")
             .onClick("_ctl_sbutton1_onclick")
             .setCustomStyle({"KEY":{"$gradients":"", "transform":"eg)"}})
@@ -61,11 +61,22 @@ Class('App', 'xui.Com',{
             .setLeft(380)
             .setTop(20)
             .setWidth(160)
-            .setHeight(40)
+            .setHeight(30)
             .setCaption("Geo Locator")
             .setHAlign("center")
             .setVAlign("middle")
             .setCustomStyle({"KEY":{"font-size":"14pt", "color":"#B22222", "text-decoration":"blink", "box-shadow":"0px 0px 17px", "$gradients":""}, "CAPTION":{"font-size":"12pt", "font-weight":"bold", "font-style":"italic", "$gradients":""}})
+            );
+            
+            append((new xui.UI.SLabel())
+            .setHost(host,"ctl_slabel11")
+            .setDock("center")
+            .setDockMargin({"left":40, "top":0, "right":0, "bottom":0})
+            .setLeft(360)
+            .setTop(60)
+            .setWidth(62)
+            .setCaption("by Lupant")
+            .setCustomStyle({"KEY":{"font-style":"italic", "$gradients":""}})
             );
             
             return children;
