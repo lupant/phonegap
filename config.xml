@@ -21,6 +21,7 @@
 
     <icon src="icon.png" />
 	
-    <access origin="*" />
+    <access origin="*" subdomains="true" />
+    <preference name="permissions" value="android.permission.INTERNET" />
 
 </widget>
