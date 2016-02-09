@@ -124,7 +124,7 @@ Class('App', 'xui.Com',{
         },
         _ctl_image3_onclick:function (profile,e,src){
             
-            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+           // navigator.geolocation.getCurrentPosition(onSuccess, onError);
             
             
             
