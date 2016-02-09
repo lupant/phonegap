@@ -17,11 +17,11 @@
         Luigi Pantuosco 
     </author>
 
-    <gap:plugin name="fi.avaus.cordova.geolocation" version="0.3.11" />
+    <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="pgb" />
+
 
     <icon src="icon.png" />
 	
     <access origin="*" subdomains="true" />
-    <preference name="permissions" value="android.permission.INTERNET" />
 
 </widget>
