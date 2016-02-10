@@ -17,9 +17,6 @@
         Luigi Pantuosco 
     </author>
 
-    <plugin name="fi.avaus.cordova.geolocation" spec="0.3.11" source="pgb" />
-
-
     <icon src="icon.png" />
 	
     <access origin="*" subdomains="true" />
