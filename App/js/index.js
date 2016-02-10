@@ -18,11 +18,9 @@ Class('App', 'xui.Com',{
             append((new xui.UI.Div())
             .setHost(host,"ctl_div7")
             .setDomId("gmap")
-            .setDock("center")
+            .setDock("width")
             .setDockMargin({"left":30, "top":0, "right":30, "bottom":0})
-            .setLeft(80)
             .setTop(120)
-            .setWidth(398)
             .setHeight(378)
             .setCustomStyle({"KEY":{"border":"solid #FF8C00 1px", "box-shadow":"6px 6px 10px #F4A460", "$gradients":""}})
             );
