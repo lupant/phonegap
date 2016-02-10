@@ -18,6 +18,7 @@ Class('App', 'xui.Com',{
             append((new xui.UI.Div())
             .setHost(host,"ctl_div7")
             .setDomId("map")
+            .setDock("center")
             .setDockMargin({"left":30, "top":0, "right":30, "bottom":0})
             .setLeft(140)
             .setTop(130)
@@ -47,12 +48,12 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.SButton())
             .setHost(host,"ctl_sbutton1")
-            .setLeft(170)
+            .setLeft(160)
             .setTop(10)
             .setWidth(90)
             .setCaption("Show on Map")
             .onClick("_ctl_sbutton1_onclick")
-            .setCustomStyle({"KEY":{"$gradients":"", "transform":"rotate(356deg) scale(1,1) skew(0deg,0deg) translate(0px,0px)"}})
+            .setCustomStyle({"KEY":{"$gradients":""}})
             );
             
             host.ctl_pane6.append((new xui.UI.Image())
