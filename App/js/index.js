@@ -17,7 +17,7 @@ Class('App', 'xui.Com',{
             
             append((new xui.UI.Div())
             .setHost(host,"ctl_div7")
-            .setDomId("map")
+            .setDomId("gmap")
             .setDock("width")
             .setDockMargin({"left":30, "top":0, "right":30, "bottom":0})
             .setTop(130)
@@ -41,7 +41,7 @@ Class('App', 'xui.Com',{
             .setDirtyMark(false)
             .setLeft(30)
             .setTop(10)
-            .setValue("Via Ovidio, pomezia")
+            .setValue("Via Ovidio, Pomezia")
             );
             
             host.ctl_pane6.append((new xui.UI.SButton())
@@ -68,9 +68,9 @@ Class('App', 'xui.Com',{
             append((new xui.UI.Label())
             .setHost(host,"ctl_label1")
             .setDock("center")
-            .setLeft(380)
+            .setLeft(262)
             .setTop(20)
-            .setWidth(160)
+            .setWidth(153)
             .setHeight(30)
             .setCaption("Geo Locator")
             .setHAlign("center")
