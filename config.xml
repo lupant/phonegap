@@ -19,6 +19,8 @@
 
     <icon src="icon.png" />
 	
-    <access origin="*" subdomains="true" />
+    <access origin="*.google.com"     subdomains="true" />
+    <access origin="*.googleapis.com" subdomains="true" />
+    <access origin="*.gstatic.com"    subdomains="true" />
 
 </widget>
