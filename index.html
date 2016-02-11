@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
- <head>
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
         <meta name="keywords" content="javascript, HTML5, CSS3, Form Builder, JSON Editor, RAD, SPA, IDE, UI, GUI, Ajax, cross-browser, cross-platform, develop" />
         <meta name="description" content="Built by CrossUI RAD Tools - Develop Once,Deploy Anywhere, HTML5, CSS3 and JavaScript for all platforms" />
@@ -13,47 +13,53 @@
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
         <script type="text/javascript" src="geo/gmaps.js"></script>
         <title>Phonegap</title>
-        </style>
-    </head>
-    <body>
-
-        <script type="text/javascript" src="runtime/xui/js/xui-all.js"></script>
-        <script type="text/javascript" src="App/js/index.js"></script>
-        <script type="text/javascript">
-            
-            var ins;
-            var map;
-            
-            xui.main( init() );
-            
-            function init(){
-                
-              
-                ins = new App;
-                
-                ins.iniComponents();
-                xui('body').append(ins.getUIComponents());
-                
-                map = new GMaps({
-                    div: '#gmap',
-                    lat: -12.043333,
-                    lng: -77.028333
-                });
-                
-                
-  
-                
-            }
-            
-            
-
-            
-            
-           
-            
-            
-        </script>
- 
+    </style>
+</head>
+<body>
+    
+    <script type="text/javascript" src="runtime/xui/js/xui-all.js"></script>
+    <script type="text/javascript" src="App/js/index.js"></script>
+    <script type="text/javascript">
         
-    </body>
+        var ins;
+        var map;
+        
+        xui.main( init() );
+        
+        function init(){
+            
+            
+            ins = new App;
+            
+            ins.iniComponents();
+            xui('body').append(ins.getUIComponents());
+            
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+            map = new GMaps({
+                div: '#gmap',
+                lat: -12.043333,
+                lng: -77.028333
+            });
+        }
+        
+        
+        
+        function onDeviceReady() {
+            
+            map = new GMaps({
+                div: '#gmap',
+                lat: -12.043333,
+                lng: -77.028333
+            });
+            
+        }
+        
+        
+        
+        
+    </script>
+    
+    
+</body>
 </html>
