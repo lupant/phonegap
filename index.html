@@ -10,75 +10,60 @@
         <meta http-equiv="imagetoolbar" content="no" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="stylesheet" type="text/css" href="runtime/xui/appearance/vista/theme.css" />
-        <script src="cordova.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnsQUz1D-QZIWHUCvfmDEduP4S6TcLkr4"></script>
-       
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="//hpneo.github.io/gmaps/gmaps.js"></script>
+        
         <title>Phonegap</title>
-
-</head>
-<body>
-    
-    <script type="text/javascript" src="runtime/xui/js/xui-all.js"></script>
-    <script type="text/javascript" src="App/js/index.js"></script>
-    <script type="text/javascript">
         
-        var ins;
-        var map;
+    </head>
+    <body>
         
-        xui.main( init() );
-        
-        function init(){
+        <script type="text/javascript" src="runtime/xui/js/xui-all.js"></script>
+        <script type="text/javascript" src="App/js/index.js"></script>
+        <script type="text/javascript">
+            
+            var ins;
+            var map;
+            
+            xui.main( init() );
+            
+            function init(){
+                
+                
+                ins = new App;
+                
+                ins.iniComponents();
+                xui('body').append(ins.getUIComponents());
+                
+                
+                document.addEventListener("deviceready", onDeviceReady, false);
+                
+                map = new GMaps({
+                    div: '#gmap',
+                    lat: -12.043333,
+                    lng: -77.028333
+                });
+                
+                
+            }
             
             
-            ins = new App;
-            
-            ins.iniComponents();
-            xui('body').append(ins.getUIComponents());
-            
-            /*
-            document.addEventListener("deviceready", onDeviceReady, false);
-
-            map = new GMaps({
-                div: '#gmap',
-                lat: -12.043333,
-                lng: -77.028333
-            });
-    
-
-            
-            map = new google.maps.Map(document.getElementById('gmap'), {
-                center: {lat: -34.397, lng: 150.644},
-                zoom: 8
-            });
-        }
-        
-      */  
-        
-            initMap();
             
             
-        }
-        
-        
-        
-        function onDeviceReady() {
             
             
-        }
-        
-        
-        function initMap() {
+            function onDeviceReady() {
+                
+                
+            }
             
-        map = new google.maps.Map(document.getElementById('gmap'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
             
-      }
+            
+            
+        </script>
         
         
-    </script>
-    
-    
-</body>
+    </body>
 </html>
