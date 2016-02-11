@@ -18,16 +18,16 @@ Class('App', 'xui.Com',{
             append((new xui.UI.Div())
             .setHost(host,"ctl_div7")
             .setDomId("gmap")
+            .setDock("width")
             .setDockMargin({"left":30, "top":0, "right":30, "bottom":0})
-            .setLeft(20)
             .setTop(120)
-            .setWidth(278)
             .setHeight(378)
             .setCustomStyle({"KEY":{"border":"solid #FF8C00 1px", "box-shadow":"6px 6px 10px #F4A460", "$gradients":""}})
             );
             
             append((new xui.UI.Pane())
             .setHost(host,"ctl_pane6")
+            .setDock("center")
             .setLeft(10)
             .setTop(70)
             .setWidth(322)
@@ -67,6 +67,7 @@ Class('App', 'xui.Com',{
             
             append((new xui.UI.Label())
             .setHost(host,"ctl_label1")
+            .setDock("center")
             .setLeft(80)
             .setTop(20)
             .setWidth(153)
@@ -79,6 +80,7 @@ Class('App', 'xui.Com',{
             
             append((new xui.UI.SLabel())
             .setHost(host,"ctl_slabel11")
+            .setDock("center")
             .setDockMargin({"left":40, "top":0, "right":0, "bottom":0})
             .setLeft(80)
             .setTop(60)
