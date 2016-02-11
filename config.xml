@@ -19,8 +19,9 @@
 
     <icon src="icon.png" />
 	
-    <access origin="*.google.com"     subdomains="true" />
-    <access origin="*.googleapis.com" subdomains="true" />
-    <access origin="*.gstatic.com"    subdomains="true" />
+    <access origin="*"    subdomains="true" />
+
+    <param name="API_KEY_FOR_ANDROID" value="AIzaSyAPcck80olCCluPLKDl6JSguC-J7CTfQtM" />
+
 
 </widget>
