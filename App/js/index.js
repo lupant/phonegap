@@ -39,7 +39,7 @@ Class('App', 'xui.Com',{
             .setDirtyMark(false)
             .setLeft(30)
             .setTop(10)
-            .setValue("Via Ovidio, Pomezia")
+            .setValue("No gmapsjs")
             );
             
             host.ctl_pane6.append((new xui.UI.SButton())
