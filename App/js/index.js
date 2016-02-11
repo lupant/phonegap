@@ -19,16 +19,16 @@ Class('App', 'xui.Com',{
             .setHost(host,"ctl_div7")
             .setDomId("gmap")
             .setDock("fill")
-            .setDockMargin({"left":30, "top":150, "right":30, "bottom":30})
+            .setDockMargin({"left":30, "top":120, "right":30, "bottom":30})
             .setCustomStyle({"KEY":{"border":"solid #FF8C00 1px", "box-shadow":"6px 6px 10px #F4A460", "$gradients":""}})
             );
             
             append((new xui.UI.Pane())
             .setHost(host,"ctl_pane6")
             .setDock("center")
-            .setLeft(10)
+            .setLeft(231)
             .setTop(70)
-            .setWidth(322)
+            .setWidth(310)
             .setHeight(40)
             .setZIndex(0)
             );
@@ -37,14 +37,15 @@ Class('App', 'xui.Com',{
             .setHost(host,"address")
             .setDomId("address")
             .setDirtyMark(false)
-            .setLeft(30)
+            .setLeft(10)
             .setTop(10)
-            .setValue("No gmapsjs")
+            .setWidth(160)
+            .setValue("Via F.lli Bandiera, Pomezia")
             );
             
             host.ctl_pane6.append((new xui.UI.SButton())
             .setHost(host,"ctl_sbutton1")
-            .setLeft(160)
+            .setLeft(180)
             .setTop(10)
             .setWidth(90)
             .setCaption("Show on Map")
@@ -54,7 +55,7 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.Image())
             .setHost(host,"ctl_image3")
-            .setLeft(270)
+            .setLeft(280)
             .setTop(0)
             .setWidth(30)
             .setHeight(30)
