@@ -21,8 +21,5 @@
 
     <preference name="phonegap-version" value="3.7.0" />
 
-    <plugin name="org.apache.cordova.geolocation" spec="0.3.2" source="pgb" />
-
-
 
 </widget>
