@@ -19,17 +19,17 @@ Class('App', 'xui.Com',{
             .setHost(host,"ctl_div7")
             .setDomId("mapg")
             .setDock("fill")
-            .setDockMargin({"left":30, "top":120, "right":30, "bottom":30})
+            .setDockMargin({"left":10, "top":10, "right":10, "bottom":10})
             .setCustomStyle({"KEY":{"border":"solid #FF8C00 1px", "box-shadow":"6px 6px 10px #F4A460", "$gradients":""}})
             );
             
             append((new xui.UI.Pane())
             .setHost(host,"ctl_pane6")
             .setDock("center")
-            .setLeft(231)
-            .setTop(70)
-            .setWidth(310)
-            .setHeight(40)
+            .setLeft(150)
+            .setTop(10)
+            .setWidth(485)
+            .setHeight(50)
             .setZIndex(0)
             );
             
@@ -37,7 +37,7 @@ Class('App', 'xui.Com',{
             .setHost(host,"address")
             .setDomId("address")
             .setDirtyMark(false)
-            .setLeft(10)
+            .setLeft(180)
             .setTop(10)
             .setWidth(160)
             .setValue("Via F.lli Bandiera, Pomezia")
@@ -45,7 +45,7 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.SButton())
             .setHost(host,"ctl_sbutton1")
-            .setLeft(180)
+            .setLeft(350)
             .setTop(10)
             .setWidth(90)
             .setCaption("Show on Map")
@@ -55,7 +55,7 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.Image())
             .setHost(host,"ctl_image3")
-            .setLeft(280)
+            .setLeft(450)
             .setTop(0)
             .setWidth(30)
             .setHeight(30)
@@ -64,11 +64,10 @@ Class('App', 'xui.Com',{
             .onClick("_ctl_image3_onclick")
             );
             
-            append((new xui.UI.Label())
+            host.ctl_pane6.append((new xui.UI.Label())
             .setHost(host,"ctl_label1")
-            .setDock("center")
-            .setLeft(80)
-            .setTop(20)
+            .setLeft(-130)
+            .setTop(5)
             .setWidth(153)
             .setHeight(30)
             .setCaption("Geo Locator")
@@ -79,11 +78,8 @@ Class('App', 'xui.Com',{
             
             append((new xui.UI.SLabel())
             .setHost(host,"ctl_slabel11")
-            .setDock("center")
-            .setDockMargin({"left":40, "top":0, "right":0, "bottom":0})
-            .setLeft(80)
-            .setTop(60)
-            .setWidth(147)
+            .setDock("top")
+            .setDockMargin({"left":0, "top":50, "right":10, "bottom":0})
             .setCaption("by Lupant")
             .setCustomStyle({"KEY":{"font-size":"8pt", "font-style":"italic", "$gradients":""}})
             );
