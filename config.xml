@@ -21,7 +21,7 @@
 	
     <access origin="*"    subdomains="true" />
 
-    <param name="API_KEY_FOR_ANDROID" value="AIzaSyAPcck80olCCluPLKDl6JSguC-J7CTfQtM" />
+    <param name="API_KEY_FOR_ANDROID" value="AIzaSyB5w-hpefUpH86oRJWR-AgoWHFaU1v9w24" />
 
 
 </widget>
