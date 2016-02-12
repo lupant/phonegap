@@ -26,9 +26,9 @@ Class('App', 'xui.Com',{
             append((new xui.UI.Pane())
             .setHost(host,"ctl_pane6")
             .setDock("center")
-            .setLeft(150)
+            .setLeft(417)
             .setTop(10)
-            .setWidth(485)
+            .setWidth(308)
             .setHeight(50)
             .setZIndex(0)
             );
@@ -37,7 +37,7 @@ Class('App', 'xui.Com',{
             .setHost(host,"address")
             .setDomId("address")
             .setDirtyMark(false)
-            .setLeft(180)
+            .setLeft(10)
             .setTop(10)
             .setWidth(160)
             .setValue("Via F.lli Bandiera, Pomezia")
@@ -45,7 +45,7 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.SButton())
             .setHost(host,"ctl_sbutton1")
-            .setLeft(350)
+            .setLeft(180)
             .setTop(10)
             .setWidth(90)
             .setCaption("Show on Map")
@@ -55,7 +55,7 @@ Class('App', 'xui.Com',{
             
             host.ctl_pane6.append((new xui.UI.Image())
             .setHost(host,"ctl_image3")
-            .setLeft(450)
+            .setLeft(280)
             .setTop(0)
             .setWidth(30)
             .setHeight(30)
@@ -64,23 +64,11 @@ Class('App', 'xui.Com',{
             .onClick("_ctl_image3_onclick")
             );
             
-            host.ctl_pane6.append((new xui.UI.Label())
-            .setHost(host,"ctl_label1")
-            .setLeft(-130)
-            .setTop(5)
-            .setWidth(153)
-            .setHeight(30)
-            .setCaption("Geo Locator")
-            .setHAlign("center")
-            .setVAlign("middle")
-            .setCustomStyle({"KEY":{"font-size":"14pt", "color":"#B22222", "text-decoration":"blink", "box-shadow":"0px 0px 17px", "$gradients":""}, "CAPTION":{"font-size":"12pt", "font-weight":"bold", "font-style":"italic", "$gradients":""}})
-            );
-            
             append((new xui.UI.SLabel())
             .setHost(host,"ctl_slabel11")
             .setDock("top")
             .setDockMargin({"left":0, "top":50, "right":10, "bottom":0})
-            .setCaption("by Lupant")
+            .setCaption("Geolocator by Lupant")
             .setCustomStyle({"KEY":{"font-size":"8pt", "font-style":"italic", "$gradients":""}})
             );
             
