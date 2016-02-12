@@ -21,13 +21,8 @@
 
     <preference name="phonegap-version" value="3.7.0" />
 
-    <access origin="*://*.googleapis.com/*" subdomains="true" />
-    <access origin="*://*.gstatic.com/*" subdomains="true" />
-    <access origin="*://*.google.com/*" subdomains="true" />
-    <access origin="*://*.googleusercontent.com/*" subdomains="true" />
+    <plugin name="org.apache.cordova.geolocation" spec="0.3.2" source="pgb" />
 
-
-    <param name="API_KEY_FOR_ANDROID" value="AIzaSyB5w-hpefUpH86oRJWR-AgoWHFaU1v9w24" />
 
 
 </widget>

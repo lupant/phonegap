@@ -12,9 +12,9 @@
         <link rel="stylesheet" type="text/css" href="runtime/xui/appearance/vista/theme.css" />
         <script type="text/javascript" src="cordova.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>   
-
+        
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"> </script>
-
+        
         <script type="text/javascript" src="geo/gmaps.js"></script>
         
         <title>Phonegap</title>
@@ -28,6 +28,7 @@
             
             var ins;
             var map;
+            var marker;
             
             xui.main( init() );
             
@@ -54,15 +55,45 @@
             
             
             
-            
-            
             function onDeviceReady() {
                 
                 
             }
             
             
+            var onSuccess = function(position) {
+                
+                /*
+                alert('Latitude: '          + position.coords.latitude          + '\n' +
+                      'Longitude: '         + position.coords.longitude         + '\n' +
+                      'Altitude: '          + position.coords.altitude          + '\n' +
+                      'Accuracy: '          + position.coords.accuracy          + '\n' +
+                      'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+                      'Heading: '           + position.coords.heading           + '\n' +
+                      'Speed: '             + position.coords.speed             + '\n' +
+                      'Timestamp: '         + position.timestamp                + '\n');
+            };
+            */
+                
+                map.setCenter(position.coords.latitude, 
+                              position.coords.longitude);
+                if (!marker) {
+                    
+                    
+                    map.addMarker({
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude,
+                        title: 'Sei Qui!',
+                        
+                    });
+                    marker = true;
+                }
+                
+            }
             
+            
+            var onError = function(position) {
+            }
             
         </script>
         
