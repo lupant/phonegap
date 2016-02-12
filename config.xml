@@ -21,5 +21,9 @@
 
     <preference name="phonegap-version" value="3.7.0" />
 
+    <access origin="*://*.googleapis.com/*" subdomains="true" />
+    <access origin="*://*.gstatic.com/*" subdomains="true" />
+    <access origin="*://*.google.com/*" subdomains="true" />
+    <access origin="*://*.googleusercontent.com/*" subdomains="true" />
 
 </widget>
