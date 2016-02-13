@@ -19,8 +19,7 @@
 
     <icon src="icon.png" />
 
-    <!-- preference name="phonegap-version" value="3.7.0" /i -->
-    <preference name="phonegap-version" value="cli-6.0.0" />
+    <preference name="phonegap-version" value="3.7.0" />
 
     <access origin="*://*.googleapis.com/*" subdomains="true" />
     <access origin="*://*.gstatic.com/*" subdomains="true" />
