@@ -19,7 +19,10 @@
 
     <icon src="icon.png" />
 
-    <preference name="phonegap-version" value="3.7.0" />
+    <!--preference name="phonegap-version" value="3.7.0" /-->
+    <preference name="phonegap-version" value="cli-5.2.0" />
+
+    <plugin name="cordova-plugin-whitelist" spec="1.1.0" />
 
     <access origin="*://*.googleapis.com/*" subdomains="true" />
     <access origin="*://*.gstatic.com/*" subdomains="true" />
